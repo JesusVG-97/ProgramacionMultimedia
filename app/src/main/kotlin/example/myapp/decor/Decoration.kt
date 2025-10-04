@@ -31,7 +31,7 @@ enum class Direction(val degrees: Int) {
     NORTH(0), SOUTH(180), EAST(90), WEST(270)
 }
 */
-class Choice {
+/*class Choice {
     companion object {
         var name: String = "lyric"
         fun showDescription(name:String) = println("My favorite $name")
@@ -43,3 +43,4 @@ fun main() {
     Choice.showDescription("pick")
     Choice.showDescription("selection")
 }
+*/
