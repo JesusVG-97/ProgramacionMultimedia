@@ -11,7 +11,7 @@ fun makeFish() {
     shark.eat()
     println("Plecostomus: ${pleco.color}")
     pleco.eat()
-}
+}*/
 fun main () {
     /*makeFish()
     makeDecorations()
@@ -21,9 +21,23 @@ fun main () {
     println(Direction.EAST.name)
     println(Direction.EAST.ordinal)
     println(Direction.EAST.degrees)
-    */
+     */
+    val s = "My Aquarium"
+    println("$s has spaces: ${s.hasSpaces()}")
+    println("Fish".hasSpaces())
+    val plant = GreenLeafyPlant(size = 10)
+    val aquariumPlant: AquariumPlant = plant
+    fun AquariumPlant.print() = println("AquariumPlant")
+    fun GreenLeafyPlant.print() = println("GreenLeafyPlant")
+    plant.print()
+    aquariumPlant.print()
+    println("Is the plant green? ${aquariumPlant.isGreen}")
+    val nullPlant: AquariumPlant? = null
+    nullPlant.pull()
+    plant.pull()
+
 }
-*/
+
 /*
 fun main() {
     // Step 1: Make some pairs and triples
@@ -54,7 +68,7 @@ fun main() {
 }
 
  */
-fun main() {
+/*fun main() {
     val list = listOf(1, 5, 3, 4)
     println(list.sum())
     val list2 = listOf("a", "bbb", "cc")
@@ -75,3 +89,4 @@ fun main() {
     println(scientific.getOrElse("swordtail") { "sorry, I don't know" })
 
 }
+*/
